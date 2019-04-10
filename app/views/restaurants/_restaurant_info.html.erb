@@ -1,14 +1,13 @@
-  <tbody>
+  <section>
     <% @restaurants.sample(1).each do |restaurant| %>
-      <tr>
-        <td><%= link_to restaurant.name, "http://#{restaurant.website}" %></td>
-        <td> | <%= restaurant.description %> </td>
-        <td>Fica na: <%= restaurant.address %>
-        <td><%= link_to 'Show', restaurant %></td>
-      </tr>
-      <tr>
-        <td><%= restaurant.cuisine%> <%= restaurant.food_type%> | </td>
-        <td><%= restaurant.price%></td>
-      </tr>
+      <div>
+        <h2><%= link_to restaurant.name, "http://#{restaurant.website}" %> <%= restaurant.description %></h2>
+        <p><%= restaurant.cuisine%> <%= restaurant.food_type%> | <%= restaurant.price%> </p>
+        <p>Fica na: <address><%= restaurant.address %></address></p>
+        
+      </div>
+      <div>
+        <%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+      </div>
     <% end %>
-  </tbody>
+  </section>

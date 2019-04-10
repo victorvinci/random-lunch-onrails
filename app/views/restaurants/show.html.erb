@@ -1,15 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Nome:</strong>
   <%= @restaurant.name %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Dados:</strong>
   <%= @restaurant.description %>
   <%= @restaurant.website%>
+  <%= @restaurant.address%>
   <%= @restaurant.price%>
+  <%= @restaurant.cuisine%>
+  <%= @restaurant.food_type%>
+  <%= @restaurant.photo_url%>
 </p>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
