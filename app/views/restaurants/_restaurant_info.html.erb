@@ -5,6 +5,9 @@
         <p><%= restaurant.cuisine%> <%= restaurant.food_type%> | <%= restaurant.price%> </p>
         <p>Fica na: <address><%= restaurant.address %></address></p>
         
+        <% if restaurant.photo_url?%>
+          <%= image_tag "#{restaurant.photo_url}", :size => "260x180" %>
+        <% end %>
       </div>
       <div>
         <%= link_to 'Edit', edit_restaurant_path(restaurant) %>

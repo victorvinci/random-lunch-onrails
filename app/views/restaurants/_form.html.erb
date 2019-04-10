@@ -4,17 +4,17 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :description %>
-    <%= f.input :website %>
-    <%= f.input :address %>
-    <%= f.input :price, collection: ['$', '$$$', '$$$$$', 'Não cabe no VR'] %>
-    <%= f.input :cuisine %>
-    <%= f.input :food_type, collection: ['PF', 'Delícia', 'Gourmet'] %>
-    <%= f.input :photo_url %>
+    <%= f.input :name, label: 'Nome do restaurante'%>
+    <%= f.input :description, label: 'Descrição do lugar' %>
+    <%= f.input :website, label: 'website' %>
+    <%= f.input :address, label: 'Endereço' %>
+    <%= f.input :price, collection: ['$', '$$$', '$$$$$', 'Não cabe no VR'], label: 'Quanto se gasta aqui' %>
+    <%= f.input :cuisine, label: 'Qual o tipo de comida? (Árabe, Padoca, Indiana, etc)' %>
+    <%= f.input :food_type, collection: ['PFzão', 'Delicinha', 'Gourmetzada'], label: 'Qual o nível da comida?' %>
+    <%= f.input :photo_url, label: 'Coloque o link com uma foto do lugar (utilize imagens leves)' %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Pronto!" %>
   </div>
 <% end %>
