@@ -6,7 +6,7 @@
         <p>Fica na: <address><%= restaurant.address %></address></p>
         
         <% if restaurant.photo_url?%>
-          <%= image_tag "#{restaurant.photo_url}", :size => "260x180" %>
+          <%= image_tag "#{restaurant.photo_url}", :size => "260x180", :class => "lunch-photo" %>
         <% end %>
       </div>
       <div>

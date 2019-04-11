@@ -1,0 +1,30 @@
+@keyframes walk {
+  0%   { transform: translateX(6px); }
+  30% {transform: translateX(176px);}
+  60%  {transform: translateX(-176px);  }
+  100% { transform: translateX(5px); }
+}
+
+@keyframes spin {
+  to {transform: rotateY(360deg);}
+}
+
+
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-250px);
+  }
+}
+
+.lunch-photo{
+  animation: spin 4s infinite;
+  z-index: 9999;
+}
+
+.lunch-photo:hover {
+  animation: walk 4s infinite alternate;
+}
