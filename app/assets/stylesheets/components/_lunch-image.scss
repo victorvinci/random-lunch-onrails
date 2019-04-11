@@ -11,18 +11,15 @@
 
 
 
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-250px);
-  }
+@-webkit-keyframes spin {
+  to {transform: rotateY(360deg);}
 }
 
 .lunch-photo{
   animation: spin 4s infinite;
   z-index: 9999;
+  display: block;
+  margin: 10px auto;
 }
 
 // .lunch-photo:hover {
