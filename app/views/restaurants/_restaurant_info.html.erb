@@ -24,8 +24,8 @@
         <% if restaurant.photo_url?%>
           <%= image_tag "#{restaurant.photo_url}", :size => "260x180", :class => "lunch-photo" %>
         <% end %>
-        <p class="restaurant-address">Fica em: <address><%= restaurant.address %></address></p>
-        
+        <p class="restaurant-address"><address><%= restaurant.address %></address></p>
+       <!-- <%= link_to 'Edit', edit_restaurant_path(restaurant) %> -->
       </div>
     <% end %>
   </section>

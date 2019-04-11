@@ -6,12 +6,12 @@
   <div class="form-inputs">
     <%= f.input :name, label: 'Nome do restaurante'%>
     <%= f.input :description, label: 'Descrição do lugar' %>
-    <%= f.input :website, label: 'website' %>
+    <%= f.input :website, label: 'Website' %>
     <%= f.input :address, label: 'Endereço' %>
-    <%= f.input :price, collection: ['$', '$$$', '$$$$$', 'Não cabe no VR'], label: 'Quanto se gasta aqui' %>
-    <%= f.input :cuisine, label: 'Qual o tipo de comida? (Árabe, Padoca, Indiana, etc)' %>
+    <%= f.input :price, collection: ['$', '$$', '$$$'], label: 'Quanto se gasta aqui?' %>
+    <%= f.input :cuisine, label: 'Qual o tipo de cozinha? (Árabe, Padoca, Indiana, etc)' %>
     <%= f.input :food_type, collection: ['PFzão', 'Delicinha', 'Gourmetzada'], label: 'Qual o estilo da comida?' %>
-    <%= f.input :photo_url, label: 'Coloque o link com uma foto do lugar (utilize imagens leves)' %>
+    <%= f.input :photo_url, label: 'Coloque o link com uma foto do lugar (utilize imagens até 1MB)' %>
   </div>
 
   <div class="form-actions">
