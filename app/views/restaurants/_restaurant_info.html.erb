@@ -1,4 +1,4 @@
-  <section>
+  <section id="restaurant">
     <% @restaurants.sample(1).each do |restaurant| %>
       <div>
         <h2><%= link_to restaurant.name, "http://#{restaurant.website}" %> <%= restaurant.description %></h2>
