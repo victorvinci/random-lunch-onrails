@@ -1,24 +1,23 @@
-<!-- <div id="overlay">
- <%= image_tag "egg.gif"%> 
-</div> -->
+<div class="wrapper">
+  <div id="overlay">
+  <%= image_tag "egg.gif"%> 
+  </div> 
+  <!--<div id="loader">
+    <%= image_tag "chicken-wings.gif" %>
+  </div>>-->
 
-<header>
-  <h1>Roleta do Almoço</h1>
-</header>
+  <main>
+    <section id="content-section">
+      <div id="content-container">
+        <%= render "restaurant_info"%>
+      </div>
+      
+      <div class="buttons">
+        <button type="button" id="button">Quero outro!</button>
 
-<div id="loader">
-  <%= image_tag "chicken-wings.gif" %>
+        <%= link_to 'Cadastre um Restaurante', new_restaurant_path, :class => "new-restaurant" %>
+      </div>
+    </section>
+
+  </main>
 </div>
-
-<main>
-  <section id="content-section">
-    <div id="content-container">
-      <%= render "restaurant_info"%>
-    </div>
-
-      <button type="button" id="button">Quero outro!</button>
-
-      <%= link_to 'Cadastre um Restaurante', new_restaurant_path, :class => "new-restaurant" %>
-  </section>
-
-</main>

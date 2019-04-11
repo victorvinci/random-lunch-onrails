@@ -2,7 +2,7 @@
     <% @restaurants.sample(1).each do |restaurant| %>
       <div class="restaurant-details">
         <h2 class="title">Hoje a boa é:</h2>
-        <h3 class="restaurant-name"><%= link_to restaurant.name, "http://#{restaurant.website}" %></h3>
+        <h3 class="restaurant-name"><%= link_to restaurant.name, "http://#{restaurant.website}", :target => "_blank" %></h3>
         <h4 class="restaurant-description"><%= restaurant.description %></h4>
 
           <section class="about-food">
@@ -26,7 +26,6 @@
         <% end %>
         <p class="restaurant-address">Fica em: <address><%= restaurant.address %></address></p>
         
-        <%= link_to 'Atualize os dados deste lugar', edit_restaurant_path(restaurant), :class => "edit-restaurant"%>
       </div>
     <% end %>
   </section>

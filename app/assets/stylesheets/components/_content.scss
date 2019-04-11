@@ -5,29 +5,38 @@
 
 .restaurant-details{
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .restaurant-details a{
   text-decoration: none;
+  color: #da4167;
 }
 
 .title {
   font-size: 80px;
   margin: 10px;
+  color: #2e4057;
 }
 
 .restaurant-name{
   font-size: 120px;
-  margin: 5px;
+  text-align: center;
+  background-color: #f4d35e;
+  width: 70%;
+  margin: 10px auto;
 }
 
 .restaurant-description{
-  font-size: 70px;
+  font-size: 2.75rem;
+  text-transform: uppercase;
   margin: 0;
+  font-style: oblique;
+  color: #2e4057;
 }
 .about-food{
   display: inline-flex;
+  margin: 20px;
 }
 
 .about-food p{
@@ -43,21 +52,25 @@
   display: flex;
   margin-right: 20px;
   padding: 10px;
+  color: #083d77;
 }
 
 .food-price {
   display: flex;
   margin-left: 20px;
   padding: 10px;
+  color: #083d77;
 }
 
 .restaurant-address{
   font-size: 30px;
   margin: 0;
+  color: #2e4057;
 }
 
 address{
   font-size: 20px;
+  color: #2e4057;
 }
 
 .edit-restaurant{

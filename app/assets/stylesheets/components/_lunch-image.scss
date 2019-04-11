@@ -19,7 +19,9 @@
   animation: spin 4s infinite;
   z-index: 9999;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
+  max-width: 250px;
+  max-height: 200px;
 }
 
 // .lunch-photo:hover {
