@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RandomLunchOnrails</title>
+    <title>Roleta do Almoço</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,8 @@
 
   <body>
     <%= yield %>
+
+    <%= render 'shared/footer' %>
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
