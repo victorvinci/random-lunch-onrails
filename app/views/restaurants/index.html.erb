@@ -1,14 +1,16 @@
-<div id="overlay">
-  <%= image_tag "egg.gif"%>
-</div>
+<!-- <div id="overlay">
+ <%= image_tag "egg.gif"%> 
+</div> -->
 
-<h1>Roleta do Almoço</h1>
-
-<div id="loader">
-  <%= image_tag "chicken-wings.gif" %>
-</div>
+<header>
+  <h1>Roleta do Almoço</h1>
+</header>
 
 <main>
+  <div id="loader">
+    <%= image_tag "chicken-wings.gif" %>
+  </div>
+
   <section id="content-section">
     <div id="content-container">
       <%= render "restaurant_info"%>

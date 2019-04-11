@@ -1,7 +1,9 @@
   <section id="restaurant">
     <% @restaurants.sample(1).each do |restaurant| %>
-      <div>
-        <h2><%= link_to restaurant.name, "http://#{restaurant.website}" %> <%= restaurant.description %></h2>
+      <div class="restaurant-details">
+        <h2>Hoje a boa é:</h2>
+        <h2><%= link_to restaurant.name, "http://#{restaurant.website}" %></h2>
+        <h3><%= restaurant.description %></h3>
         <p><%= restaurant.cuisine%> <%= restaurant.food_type%> | <%= restaurant.price%> </p>
         <p>Fica na: <address><%= restaurant.address %></address></p>
         
