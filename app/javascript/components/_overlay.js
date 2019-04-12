@@ -1,6 +1,6 @@
 function loadPage() {
   $(document).ready(function() {
-    $("#content-section").fadeOut();
+    $("#content-section").fadeOut(1);
     setTimeout(function() {
       $("#overlay").fadeOut(1000);
       $("#content-section").fadeIn(500);
