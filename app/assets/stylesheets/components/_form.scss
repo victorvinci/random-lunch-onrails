@@ -28,10 +28,26 @@
 
 .voltar-form{
   margin: 0 30px;
-  color: #da4167
+  color: #da4167;
+  height: 40px;
+  display: block;
 }
 
 .title-new-restaurant{
   margin: 0 30px;
   color: #2e4057;
+}
+
+@media screen and (max-width: 435px) {
+  .form-inputs{
+    margin: 0 35px;
+  }
+
+  .form-inputs textarea{
+    width: 250px;
+  }
+
+  .form-actions {
+    margin: 20px 35px;
+  }
 }
