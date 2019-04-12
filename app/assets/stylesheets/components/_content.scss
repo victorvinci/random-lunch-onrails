@@ -17,6 +17,7 @@
   font-size: 80px;
   margin: 10px;
   color: #2e4057;
+
 }
 
 .restaurant-name{
@@ -36,7 +37,7 @@
 }
 .about-food{
   display: inline-flex;
-  margin: 20px;
+  margin: 20px 0 5px 20px;
 }
 
 .about-food p{
@@ -75,4 +76,41 @@ address{
 
 .edit-restaurant{
   margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .restaurant-name {
+    font-size: 3em;
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .restaurant-description {
+    font-size: 1.3rem;
+    margin: 20px 5px 0 0;
+  }
+
+  address {
+    font-size: 15px;
+  }
+
+  .about-food {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-info {
+    padding: 0;
+    align-items: center;
+  }
+
+  .food-price {
+    margin-left: 0;
+    padding: 0;
+    align-items: center;
+  }
 }
