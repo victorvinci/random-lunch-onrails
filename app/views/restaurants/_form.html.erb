@@ -6,8 +6,8 @@
   <div class="form-inputs">
     <%= f.input :name, label: 'Nome do restaurante'%>
     <%= f.input :description, label: 'Descrição do lugar' %>
-    <%= f.input :website, label: 'Website' %>
-    <%= f.input :address, label: 'Endereço', placeholder: "http://" %>
+    <%= f.input :website, label: 'Website', placeholder: "http://" %>
+    <%= f.input :address, label: 'Endereço' %>
     <%= f.input :price, collection: ['$', '$$', '$$$'], label: 'Quanto se gasta aqui?' %>
     <%= f.input :cuisine, label: 'Qual o tipo de cozinha? (Árabe, Padoca, Indiana, etc)' %>
     <%= f.input :food_type, collection: ['PFzão', 'Delicinha', 'Gourmetzada'], label: 'Qual o estilo da comida?' %>
